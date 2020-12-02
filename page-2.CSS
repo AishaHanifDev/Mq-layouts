@@ -1,0 +1,127 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+.wrapper{
+	width:100%;
+}
+.nav{
+	width:100%;
+	background-color:turquoise;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	height:4rem;
+} 
+.btn1,.btn2,.btn3{
+	width:2.5rem;
+	flex:1;
+	border-radius:70%;
+	height:2.5rem;
+	color:white;
+	border:none;
+	margin:10px;
+}
+.butns{
+	width:80%;
+	display:flex;
+	iustify-content:space-between;
+}
+.btn4{
+	flex:2 0 auto;
+	width:2rem;
+	color:white;
+	border-radius:4px;
+	height:2rem;
+	border:none;
+	margin:15px;
+}
+.BOX,.bOX,.boX,.bOx,.last{
+	flex-basis:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	margin:10px;
+}
+.box1{
+	width:100%;
+	background-color:lightgrey;
+	height:15rem;
+}
+.box2,.box3,.box4{
+	width:17rem;
+	border-radius:50%;
+	background-color:tomato;
+	height:17rem;
+	margin:20px;
+}
+.box3{
+	background-color:turquoise;
+}
+.box4{
+  background-color:gold;
+}
+.box5,.box6,.box7,.box8,.box9,.box10{
+	flex-basis:22.9999%;
+	height:1rem;
+	background-color:lightgrey;
+	margin:1rem;
+}
+.box11,.box12,.box13{
+/*	display:block;
+*/	flex-basis:18.9999%;
+	height:1rem;
+	background-color:lightgrey;
+	margin:1rem;
+}
+                    /*  CSS END  */
+
+              /*  Mediaqueries Start  */
+      /* Mediaqueries for low Resolution Tablets, Mobiles */
+   
+   /* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px:
+*/
+@media (min-width:100px) and (max-width: 767px) {
+     .box4.box7,.box10,.box13{
+     	width:100%;
+     }
+     .box4{
+     	height:10rem;
+     	width:10rem;
+     	display:block;
+     }
+     .box2,.box3,.box5,.box6,.box8,.box9,.box11,.box12{
+     	display:none;
+     }
+}
+         /*  Mediaqueries for iPads,Tablets  */
+    /* ##Device = Tablets, Ipads 
+       ##Screen = B/w 768px to 1024px:
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+     .box5,.box6,.box8,.box9,.box11,.box12{
+       width:100%;
+     }
+     .box2,.box3{
+         width:14rem;
+         height:14rem;
+     }
+     .box4,.box7,.box10,.box13{
+     	display:none;
+     }
+ 
+}
+        /*  Mediaqueries for Laptops,Desktops  */ 
+  /* 
+     ##Device = Laptops, Desktops
+     ##Screen = B/w 1025px to 1280px:
+*/
+@media (min-width:1025px) and (max-width:1280px){
+	.wrapper{
+		width:100%;
+	}
+     
+	}    
+	      /*  Mediawueries End  */

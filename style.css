@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+/*    box-sizing: border-box;
+*/}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 72%;
+}
+.RIGHT{
+    width: 24%;
+}
+.header{
+    width: 60rem;
+}
+.head{
+    background-color: orangered;
+    display: inline-block;
+    height: 5rem;
+    width: 57rem;
+    margin: 20px;
+}
+.container{
+    width: 60rem;
+    height: 19rem;
+    display: flex;
+    justify-content: space-between;
+} 
+.col{
+    height: 7rem;
+    width: 24rem;
+    margin: 20px;
+    background-color: steelblue;
+}
+.box{
+    height: 15rem;
+    width: 30rem;
+    margin: 20px;
+    background-color: skyblue;
+}
+.big-box{
+    margin: 20px;
+    width: 60rem;
+    background-color: rgb(61, 61, 61);
+}
+.row{
+    width: 16rem;
+    height: 43rem;
+    margin: 20px;
+    background-color: steelblue;
+}
+.footer{
+    width: 100%;
+    height: 3rem;
+    margin-top: 37px;
+    background-color: orangered;
+}
+                         /* CSS END */
+                   /*  Mediaqueries Start  */
+          /* Mediaqueries for low Resolution Tablets, Mobilephones */
+    /* 
+         ##Device = Low Resolution Tablets, Mobilesphones:
+         ##Screen = B/w 481px to 767px:
+*/
+@media (min-width:100px) and (max-width: 767px) {
+    .left {
+        width:59rem;
+        margin:7px;
+    }
+    .head{
+        width:59rem;
+        height:6rem;
+        margin:15px;
+    }
+    .LEFT,.col{
+        display:none;
+    }
+    .right,.box{
+        width:60rem;
+        height:10rem;
+        margin:10px;
+    }
+    .BBOX,.container,.big-box{
+        width:59rem;
+        margin:10px;
+    }
+    .RIGHT,.row{
+        display:none;
+    }
+    .footer{
+        width:59rem;
+        margin:10px;
+        height:5rem; 
+
+    }
+
+}
+       /* Media Queries for iPads, Tablets */
+
+/*       ##Device = Tablets, Ipads 
+         ##Screen = B/w 768px to 1024px:
+*/ 
+ @media (min-width: 768px) and (max-width:1024px){
+    .header {
+        width: 86%;
+    }
+    .head {
+        height: 5rem;
+        width: 52rem;
+    }
+    .RIGHT,.row{
+        display: none;
+     }
+    /*.container {
+        width:45rem;
+        height:30rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }*/
+    .LEFT{
+        display: flex;
+        height:7rem;
+        width:42rem;
+    }
+    .col {
+        height:5rem;
+        width:70rem;
+        display: flex;
+        justify-content:space-between;
+        background-color: steelblue;
+    }
+    .right{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 94%;
+    }
+    .box {
+        height:15rem;
+        width: 60rem;
+/*        margin: 15px 0;
+*/        background-color: skyblue;
+    }
+    .big-box{
+        width:50rem;
+        height:10rem;
+        margin:0px;
+    }
+    .footer{
+        display: none;
+    }
+}
+         
+
+        /*  Mediaqueries for Laptops,Desktops  */
+ /* 
+            ##Device = Laptops, Desktops
+            ##Screen = B/w 1025px to 1280px:
+*/
+@media (min-width:1025px) and (max-width:1280px){
+
+    .left {
+        width:60%;
+    }
+    .RIGHT{
+     width:15%;
+   }
+   footer{
+       width: 100%;
+   }
+ }
+
+          /*Mediaqueries END*/

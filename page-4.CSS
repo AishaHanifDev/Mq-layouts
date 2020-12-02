@@ -1,0 +1,154 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.wrapper{
+	flex-basis:100%;
+}
+.nav{
+	flex-basis:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	height:4rem;
+}
+.nav{
+    background-color:purple;
+   	margin-top:30px;
+}
+.BOX,.BOx,.boX,.bOx,.smbox,.Smbox,.bgbox,.last{
+	margin:20px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width:97%;
+}
+.BOX{
+	flex-basis:99%;
+    background-color:purple;
+   	justify-content:center;
+   	height:15rem;
+}
+
+.boX,.bOx,.smbox,.Smbox{
+	height:1rem;
+}
+.btn1,.btn2,.btn3,.btn4{
+	flex-basis:10%;
+	height:2rem;
+	background-color:mistyrose;
+	border:none;
+	margin:15px;
+	border-radius:1px;
+}
+.box1{
+	flex-basis:50%;
+	background-color:mistyrose;
+	border:none;
+	height:4rem;
+	margin-top:6rem;
+}
+.box2{
+	flex-basis:15%;
+	background-color:#ff0040;
+	border:none;
+	height:4rem;
+	margin-top:6rem;
+}
+.box3,.box4,.box5{
+	width:32%;
+	height:15rem;
+	background-color:lightblue;
+	margin:10px;
+}
+.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15,.box16,.box17{
+	flex-basis:32%;
+	height:1rem;
+	background-color:#757575;
+	margin:10px;
+}
+.box18{
+	width:99%;
+	height:15rem;
+	background-color:#ff0040;
+	margin:10px;
+}
+.box19,.box20{
+	width:99%;
+	height:1rem;
+	background-color:#757575;
+	margin-left:10px;
+}
+.bar{
+     border:none;
+     display:none;
+     position:absolute;
+     left:20px;
+     margin:15px;
+}
+
+                     /*CSS END*/
+
+                 /* Mediaqueries Start */
+      /* Mediaqueries for low Resolution Tablets, Mobiles */
+   
+   /* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px:
+*/
+@media (min-width:100px) and (max-width: 767px) {
+    .bar{
+    	display:flex;
+    	background-color:white;
+    	color:#757575;
+    }
+    .top{
+    	width:100%;
+    	height:3rem;
+    	background-color:white;
+    }
+    .btn1,.btn2,.btn3,.btn4{
+    	display:none;
+    }
+    .box3,.box4,.box5{
+      	height:10rem;
+      }
+      .box19,.box20{
+      	width:97%;
+      	height:1rem;
+      	margin-left:10px;
+      }
+}     
+          /* Mediaqueries for iPads,Tablets */
+
+      /* ##Device = Tablets, Ipads 
+       ##Screen = B/w 768px to 1024px:
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+      .box3,.box4,.box5{
+      	height:10rem;
+      }
+      .box19,.box20{
+      	width:98%;
+      	height:1rem;
+/*      	margin-left:9px;
+*/      }
+  }
+         /*  Mediaqueries for Laptops,Desktops  */ 
+  /* 
+     ##Device = Laptops, Desktops
+     ##Screen = B/w 1025px to 1280px:
+*/
+@media (min-width:1025px) and (max-width:1280px){
+	.box3,.box4,.box5{
+      	height:10rem;
+      }
+      .box19,.box20{
+      	width:98%;
+      	height:1rem;
+      	margin-left:10px;
+      }
+  
+}
+
+            /* Mediaqueries END */

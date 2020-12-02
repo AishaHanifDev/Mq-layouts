@@ -1,0 +1,119 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+.wrapper{
+	width:100%;
+}
+.nav,.top{
+   height:4rem;
+}
+.nav,.top,.Box,.bOx,.boX{
+	width:97%;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+  margin:20px;
+}
+.BOX{
+	width:20%;
+	height:4rem;
+	background-color:#ff1493;
+	border:none;
+	margin:15px;
+}
+.top{
+	background-color:grey;
+	flex:1;
+	margin:10px;
+}
+.btn1,.btn2,.btn3,.btn4,.btn5,.btn6{
+	width:10%;
+	flex:1;
+	background-color:white;
+	height:1rem;
+	border-radius:3px;
+	border:none;
+	margin:20px;
+}
+.box1{
+	width:97.9999%;
+	background-color:grey;
+	height:20rem;
+	margin:10px;
+  margin-bottom:0px;
+}
+.box2,.box3,.box4{
+	width:31%;
+	height:23rem;
+	background-color:skyblue;
+	margin:16px;
+}
+.box5,.box6,.box7{
+	width:97.9999%;
+	background-color:grey;
+	height:2rem;
+}
+.bOx{
+  height:25rem;
+}
+.bar{
+  border:none;
+  display:none;
+  position:absolute;
+  right:20px;
+}
+                        /*  CSS END  */
+
+                  /*  Mediaqueries Start  */
+         /* Mediaqueries for low Resolution Tablets, Mobile */
+    /* 
+      ##Device = Low Resolution Tablets, Mobiles:
+      ##Screen = B/w 481px to 767px:
+*/
+@media (min-width:100px) and (max-width: 767px) {
+
+    .box2,.box3,.box4,.box5,.box6,.box7{
+      display:flex;
+      width:93%;
+    }
+    .bOx{
+      width:100%;
+      flex-direction:column;
+   }
+    .bar{
+    	display:flex;
+    	background-color:grey;
+    	height:2rem;
+    	color:white;
+    }
+    .top{
+    	width:90%;
+    }
+    .btn1,.btn2,.btn3,.btn4,.btn5,.btn6{
+    	display:none;
+    }
+}
+         /*  Mediaqueries for iPads,Tablets  */
+
+     /*  ##Device = Tablets, Ipads 
+         ##Screen = B/w 768px to 1024px:
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+     .top{
+     	width:90%;
+     }
+ }
+   
+        /*  Mediaqueries for Laptops,Desktops  */
+
+/* 
+            ##Device = Laptops, Desktops
+            ##Screen = B/w 1025px to 1280px:
+*/
+@media (min-width:1025px) and (max-width:1280px){
+   .top{
+     	width:90%;
+     }
+ }
+             /*  Mediaqueries END  */
