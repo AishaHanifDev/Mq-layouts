@@ -1,33 +1,27 @@
-*{
+body{
 	margin:0;
 	padding:0;
 }
 .wrapper{
-	width:100%;
+	width:95%;
 	display:flex;
 	justify-content:space-between;
+   margin:1.3rem auto;
+
 }
 .left{
-	width:70%;
-/*	margin:10px;
-*/}
+	width:75%;
+}
 .RIGHT{
-    width:25%;
-    margin:10px;
+    width:20%;
 }
 .header{
 	width:100%;
-	display:inline-block;
-	flex-direction:column;
-	justify-content:space-between;
-/*	margin:10px;
-*/}
+}
 .head{
 	width:100%;
 	background-color: orangered;
-    height:6rem;
-    margin:10px;
-
+  height:6rem;
 }
 .container{
     width:100%;
@@ -35,45 +29,40 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    margin-top:0.5rem;
 } 
 .LEFT{
 	width:48%;
 	height:10rem;
 }
-.col{
+.col1,.col2{
 	width:100%;
-	height:7rem;
+	height:9rem;
 	background-color:steelblue;
-	margin:15px;
+}
+.col2{
+  margin-top:0.5rem;
 }
 .right{
-	width:48%;
+	width:50%;
 }
 .box{
 	width:100%;
-	height:15.1rem;
+	height:18.5rem;
 	background-color:lightblue;
-	margin:15px;
 }
-/*.BBOX{
-    width:60%;
-    height:8rem;
-}*/
 .big-box{
     width:100%;
     background-color:#757575;
     height:16rem;
-    margin-left:15px;
 }
 .row{
-    width:90%;
-    height:42rem;
-/*    margin: 20px;
-*/  background-color: steelblue;
+    height:43rem;
+  background-color: steelblue;
 }
 .footer{
+    width:100%;
     height:5rem;
-    margin:10px;
     background-color: orangered;
 } 
                                /* CSS END */
@@ -86,7 +75,7 @@
 @media (min-width:100px) and (max-width: 767px) {
 	   .left,.header,.head{
 	   	width:100%;
-	   	margin:2px;
+      margin-bottom:3rem;
 	   }
 	   .RIGHT{
 	   	display:none
@@ -96,23 +85,26 @@
         display:flex;
         justify-content:space-between;
        	flex-direction:column-reverse;
-       	margin:0;
+       	margin:1.3rem auto;
        	height:15rem;
        }
        .box,.right{
        	width:100%;
        	height:7.9rem;
-       	margin:2px;
+       	margin-bottom:1rem;
        }
-       .big-box,.LEFT,.col{
+       .big-box,.LEFT,.col1,.col2{
        	width:100%;
-       	height:7.0rem;
-       	margin:2px;
-       }
+       	height:7rem;
+        margin-bottom:1rem
+      }
        .footer{
-       	width:99%;
-       	margin:2px;
-       }
+        position:absolute;
+         top:42rem;
+         bottom:0;
+       	width:100%;
+       margin:0px;
+      }
 }
              /* Mediaqueries for iPads,Tablets */
 
@@ -123,6 +115,12 @@
      .wrapper{
       width:100%;
      }
+     .container,.left,.RIGHT{
+        margin:1.5rem auto;
+      }
+      .row{
+        height:43.5rem;
+      }
    }
            /*  Mediaqueries for Laptops,Desktops  */ 
   /* 
@@ -130,8 +128,12 @@
          ##Screen = B/w 1025px to 1280px:
 */
 @media (min-width:1025px) and (max-width:1280px){
-    .wrapper{
+    .container{
       width:100%;
+      margin:1.3rem auto;
+    }
+    .row{
+      height:43.5rem;
     }
   }
             /*  Mediaqueries END  */

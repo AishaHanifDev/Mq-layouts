@@ -1,31 +1,37 @@
-*{
+body{
   margin:0px;
   padding:0px;
 }
 .wrapper{
 	width:100%;
 }
-.nav,.top{
-   height:4rem;
+.container{
+  width:95%;
+  margin:1.5rem auto;
+  justify-content:space-between;
 }
-.nav,.top,.Box,.bOx,.boX{
-	width:97%;
+.nav,.top{
+   height:5rem;
+   margin:1.5rem auto;
+   width:95%;
+}
+.nav,.top,.Box,.bOx{
 	display:flex;
 	flex-direction:row;
-	justify-content:center;
-  margin:20px;
+	justify-content:space-between;
 }
 .BOX{
-	width:18%;
-	height:4rem;
+	width:8%;
 	background-color:#ff1493;
 	border:none;
-	margin:15px;
+  height:5rem;
+  margin-top:1.5rem;
 }
 .top{
 	background-color:grey;
 	flex:1;
-	margin:15px;
+  height:5rem;
+  margin-left:1rem;   
 }
 .btn1,.btn2,.btn3,.btn4,.btn5,.btn6{
 	width:10%;
@@ -34,28 +40,33 @@
 	height:1rem;
 	border-radius:3px;
 	border:none;
-	margin:20px;
+	margin:30px;
 }
 .box1{
-	width:97.9999%;
+	width:100%;
 	background-color:grey;
 	height:20rem;
-	margin:10px;
-  margin-bottom:0px;
+	margin-top:1rem;
 }
 .box2,.box3,.box4{
 	width:31%;
 	height:23rem;
 	background-color:skyblue;
-	margin:16px;
 }
 .box5,.box6,.box7{
-	width:97.9999%;
+	width:100%;
 	background-color:grey;
 	height:2rem;
+  margin-top:1rem;
 }
 .bOx{
-  height:25rem;
+  height:24rem;
+  width:100%;
+  margin-top:2rem;
+}
+.boX{
+  width:100%;
+  height:2rem;
 }
 .bar{
   border:none;
@@ -63,7 +74,7 @@
   position:absolute;
   right:20px;
 }
-                        /*  CSS END  */
+                         /*  CSS END  */
 
                   /*  Mediaqueries Start  */
          /* Mediaqueries for low Resolution Tablets, Mobilephones */
@@ -75,20 +86,31 @@
 
     .box2,.box3,.box4,.box5,.box6,.box7{
       display:flex;
-      width:93%;
+      width:100%;
     }
     .bOx{
       width:100%;
       flex-direction:column;
+      height:15rem;
+      margin-top:0.5rem;
+   }
+   .box2,.box3,.box4{
+    margin-top:1rem;
+    height:15rem;
    }
     .bar{
     	display:flex;
     	background-color:grey;
     	height:2rem;
     	color:white;
+      margin:0.7rem;
     }
     .top{
-    	width:90%;
+    	width:100%;
+      margin:0px;
+    }
+    .BOX,.box1{
+      margin:0px;
     }
     .btn1,.btn2,.btn3,.btn4,.btn5,.btn6{
     	display:none;
@@ -102,6 +124,10 @@
 @media (min-width: 768px) and (max-width: 1024px) {
      .top{
      	width:90%;
+      margin:0px;
+     }
+     .BOX,.box1,.box2,.box3,.box4,.box5{
+      margin:0px;
      }
  }
    
@@ -113,7 +139,8 @@
 */
 @media (min-width:1025px) and (max-width:1280px){
    .top{
-     	width:90%;
+     	width:91%;
      }
+     
  }
              /*  Mediaqueries END  */
