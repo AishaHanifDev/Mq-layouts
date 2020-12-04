@@ -3,10 +3,10 @@
 	padding:0px;
 }
 .wrapper{
-	flex-basis:100%;
+	width:100%;
 }
 .nav{
-	flex-basis:100%;
+   width:100%;
 	display:flex;
 	flex-direction:row;
 	justify-content:center;
@@ -24,7 +24,7 @@
 	width:97%;
 }
 .BOX{
-	flex-basis:99%;
+	width:99%;
     background-color:purple;
    	justify-content:center;
    	height:15rem;
@@ -34,7 +34,7 @@
 	height:1rem;
 }
 .btn1,.btn2,.btn3,.btn4{
-	flex-basis:10%;
+	width:10%;
 	height:2rem;
 	background-color:mistyrose;
 	border:none;
@@ -42,14 +42,14 @@
 	border-radius:1px;
 }
 .box1{
-	flex-basis:50%;
+	width:50%;
 	background-color:mistyrose;
 	border:none;
 	height:4rem;
 	margin-top:6rem;
 }
 .box2{
-	flex-basis:15%;
+	width:15%;
 	background-color:#ff0040;
 	border:none;
 	height:4rem;
@@ -62,7 +62,7 @@
 	margin:10px;
 }
 .box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15,.box16,.box17{
-	flex-basis:32%;
+	width:32%;
 	height:1rem;
 	background-color:#757575;
 	margin:10px;
@@ -87,13 +87,13 @@
      margin:15px;
 }
 
-                     /*CSS END*/
+                       /* CSS END */
 
                  /* Mediaqueries Start */
-      /* Mediaqueries for low Resolution Tablets, Mobiles */
+      /* Mediaqueries for low Resolution Tablets, Mobilephones */
    
    /* 
-      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Device = Low Resolution Tablets, Mobilesphones
       ##Screen = B/w 481px to 767px:
 */
 @media (min-width:100px) and (max-width: 767px) {
