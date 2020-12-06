@@ -8,12 +8,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-   <div class="wrapper">
-   	<div class="nav">
-   	  <button class="BOX"></button>
-    <div class="top"> 
-        <button class="bar"><i class="fa fa-bars fa-4x"></i></button>
-        <button class="btn1"></button>
+  <div class="wrapper">
+   <div class="nav">
+    <button class="BOX"></button>
+  <div class="top">
+  <div id="myLeftpanel" class="leftpanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#btn1"><button class="btn1"></button></a>
+    <a href="#btn2"><button class="btn2"></button></a>
+    <a href="#btn3"><button class="btn3"></button></a>
+    <a href="#btn4"><button class="btn4"></button></a>
+    <a href="#btn5"><button class="btn5"></button></a>
+    <a href="#btn6"><button class="btn6"></button></a>
+</div>
+    <button class="openbtn" onclick="openNav()">☰</button>  
+       <button class="btn1"></button>
         <button class="btn2"></button>
         <button class="btn3"></button>
         <button class="btn4"></button>
@@ -39,6 +48,24 @@
      <div class="boX">
        <div class="box7"></div>
      </div>
-   </div></div>
+   </div>
+ </div>
+
+
+
+
+
+   <script>
+    function openNav() {
+      document.getElementById("myLeftpanel").style.width = "400px" ;
+      document.getElementById("myLeftpanel").style.height = "100%" ;
+
+    }
+    
+    function closeNav() {
+        document.getElementById("myLeftpanel").style.width = "0";
+
+    }
+</script>
   </body>
 </html>

@@ -3,12 +3,55 @@ body{
   padding:0px;
 }
 .wrapper{
-	width:100%;
+  width:100%;
 }
 .container{
   width:95%;
   margin:1.5rem auto;
   justify-content:space-between;
+}
+.leftpanel{
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  height: 250px;
+  top:23px;
+  right:16.5px;
+  background-color:#f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.leftpanel a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.leftpanel a:hover{
+  color:red;
+}
+.leftpanel .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  display:none;
+  color:white;
+}
+.openbtn{
+  font-size: 20px;
+  cursor: pointer;
+  background-color:#757575;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  display:none;
+} 
+.openbtn:hover{
+  background-color:#ff1493;
 }
 .nav,.top{
    height:5rem;
@@ -28,7 +71,7 @@ body{
   margin-top:1.5rem;
 }
 .top{
-	background-color:grey;
+	background-color:#757575;
 	flex:1;
   height:5rem;
   margin-left:1rem;   
@@ -44,7 +87,7 @@ body{
 }
 .box1{
 	width:100%;
-	background-color:grey;
+	background-color:#757575;
 	height:20rem;
 	margin-top:1rem;
 }
@@ -92,7 +135,7 @@ body{
       width:100%;
       flex-direction:column;
       height:15rem;
-      margin-top:0.5rem;
+      margin-top:0.3rem;
    }
    .box2,.box3,.box4{
     margin-top:1rem;
@@ -108,12 +151,39 @@ body{
     .top{
     	width:100%;
       margin:0px;
+      height:5rem;
+  }
+    .box1{
+      margin-top:0.5rem;
     }
-    .BOX,.box1{
-      margin:0px;
+    .BOX{
+       margin:0px;
     }
     .btn1,.btn2,.btn3,.btn4,.btn5,.btn6{
-    	display:none;
+   	   display:none;
+       background-color:lightgrey;
+        width:40%;
+        margin:5px;
+    }
+    .openbtn,.leftpanel .closebtn{
+      display:flex;
+      position:absolute;
+      right:17px;
+      border:none;
+      font-size:45px;
+    }
+    .leftpanel{
+      background-color:#757575;
+    }
+    .closebtn{
+      color:white;
+    }
+    .leftpanel button{
+      display:flex;
+      background-color:white;
+      width:90%;
+      margin-top:3rem;
+
     }
 }
          /*  Mediaqueries for iPads,Tablets  */
@@ -126,10 +196,18 @@ body{
      	width:90%;
       margin:0px;
      }
+     .BOX{
+      margin-top:12px;
+     }
      .BOX,.box1,.box2,.box3,.box4,.box5{
       margin:0px;
      }
- }
+     .leftpanel,.openbtn{
+        display:none;
+     }
+
+     }
+
    
         /*  Mediaqueries for Laptops,Desktops  */
 
@@ -140,6 +218,13 @@ body{
 @media (min-width:1025px) and (max-width:1280px){
    .top{
      	width:91%;
+      margin:0px;
+     }
+     .BOX{
+      margin:0px;
+     }
+     .leftpanel,.openbtn{
+        display:none;
      }
      
  }
